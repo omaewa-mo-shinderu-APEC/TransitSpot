@@ -16,14 +16,14 @@ class pageData {
   pageData(String kind) {
     switch (kind) {
       case 'TRANSACTION':
-        title = 'Yeay! Transaksi berhasil diproses';
+        title = 'Yeay! Transaction successfully processed';
         mainRoute = Routes.homeView;
         mainRouteTitle = 'Back to Home';
         backRoute = Routes.bookView;
         hasOptionalRoute = false;
         break;
       case 'BOOK':
-        title = 'Yeay! Pemesanan berhasil diproses';
+        title = 'Yeay! Order successfully processed';
         //TODO: change to live location
         mainRoute = Routes.onDemandView;
         mainRouteTitle = 'Share Live Location';

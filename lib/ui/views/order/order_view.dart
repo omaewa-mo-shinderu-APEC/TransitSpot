@@ -11,7 +11,7 @@ import 'package:transitspot/ui/views/search_result/components/card_result.dart';
 
 @FormView(
   fields: [
-    FormTextField(name: 'amount', isPassword: false),
+    FormTextField(name: 'amount'),
     FormDropdownField(
       name: 'paymentMethod',
       items: [
@@ -125,7 +125,7 @@ class OrderView extends StatelessWidget with $OrderView {
                                       horizontal: 0.0,
                                     ),
                                     child: Text(
-                                      'Jumlah Pemesanan',
+                                      'Number of Orders',
                                       style: TextStyle(
                                         fontSize: 18.0,
                                         fontWeight: FontWeight.w600,
@@ -168,7 +168,7 @@ class OrderView extends StatelessWidget with $OrderView {
                                       horizontal: 0.0,
                                     ),
                                     child: Text(
-                                      'Metode Pembayaran',
+                                      'Payment Method',
                                       style: TextStyle(
                                         fontSize: 18.0,
                                         fontWeight: FontWeight.w600,
@@ -204,7 +204,7 @@ class OrderView extends StatelessWidget with $OrderView {
                                         hint: const Padding(
                                           padding: EdgeInsets.all(8.0),
                                           child: Text(
-                                            "Pilih metode pembayaran",
+                                            "Choose payment method",
                                           ),
                                         ),
                                         dropdownColor:

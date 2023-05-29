@@ -11,8 +11,8 @@ import 'package:transitspot/ui/views/book/book_view.form.dart';
 import 'package:transitspot/utils/text_input.dart';
 
 @FormView(fields: [
-  FormTextField(name: 'tempatAwal', isPassword: false),
-  FormTextField(name: 'tujuan', isPassword: false),
+  FormTextField(name: 'tempatAwal'),
+  FormTextField(name: 'tujuan'),
 ])
 class BookView extends StatelessWidget with $BookView {
   BookView({Key? key}) : super(key: key);
@@ -92,13 +92,13 @@ class BookView extends StatelessWidget with $BookView {
                                 TextInput(
                                   nameController: tempatAwalController,
                                   nameFocusNode: tempatAwalFocusNode,
-                                  nameField: "Input Tempat Awal",
+                                  nameField: "Input Starting Point",
                                   hint: "Type here ...",
                                 ),
                                 TextInput(
                                   nameController: tujuanController,
                                   nameFocusNode: tujuanFocusNode,
-                                  nameField: "Input Tujuan",
+                                  nameField: "Input Destination",
                                   hint: "Type here ...",
                                 ),
                                 const SizedBox(

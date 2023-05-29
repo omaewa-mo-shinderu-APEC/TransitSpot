@@ -29,14 +29,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  stacked:
+  stacked: ^3.2.0
   auto_route:
-  stacked_services:
+  stacked_services: ^1.0.0
   get_it:
   injectable:
   freezed_annotation:
   flutter_svg:
-  stacked_generator:
+  stacked_generator: ^1.1.0
   firebase_auth: 
   firebase_core:
   firebase_analytics:
@@ -52,7 +52,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
   freezed:
   json_serializable:
   build_runner:

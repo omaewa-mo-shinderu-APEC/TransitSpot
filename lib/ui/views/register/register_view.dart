@@ -8,9 +8,9 @@ import 'package:stacked/stacked.dart';
 import 'package:transitspot/utils/text_input.dart';
 
 @FormView(fields: [
-  FormTextField(name: "name", isPassword: false),
-  FormTextField(name: "email", isPassword: false),
-  FormTextField(name: "password", isPassword: true),
+  FormTextField(name: "name"),
+  FormTextField(name: "email"),
+  FormTextField(name: "password"),
   FormDropdownField(
     name: 'registerAs',
     items: [

@@ -9,7 +9,7 @@ import 'package:transitspot/utils/app_color.dart';
 import 'ondemand_view.form.dart';
 
 @FormView(fields: [
-  FormTextField(name: "target", isPassword: false),
+  FormTextField(name: "target"),
 ])
 class OnDemandView extends StatelessWidget with $OnDemandView {
   OnDemandView({Key? key}) : super(key: key);
