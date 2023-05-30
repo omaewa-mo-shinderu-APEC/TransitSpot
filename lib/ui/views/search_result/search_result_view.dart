@@ -77,7 +77,7 @@ class SearchResultView extends StatelessWidget {
                         child: Column(
                           children: [
                             Text(
-                              'Menampilkan hasil pencarian dari $start ke $destination',
+                              'Showingg searching result from $start to $destination',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 fontWeight: FontWeight.w500,
