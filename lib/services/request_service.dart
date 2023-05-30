@@ -7,9 +7,9 @@ import 'package:transitspot/services/firestore_service.dart';
 
 class RequestService {
   final _requestService =
-      locator<FirestoreService>().requestCollectionReference;
+      locator<ServerEventService>().requestCollectionReference;
 
-  final _firestoreService = locator<FirestoreService>();
+  final _serverEventService = locator<ServerEventService>();
 
   Future<String> createRequest(Request newRequest) async {
     DocumentReference<Request> addedRequest =
@@ -40,7 +40,7 @@ class RequestService {
 
   Future<void> addDriverLatLng(
       String requestId, LocationLatLng driverLatLng) async {
-    await _firestoreService
+    await _serverEventService
         .getRequestLocationReference(requestId)
         .doc("driver")
         .set(driverLatLng);
@@ -61,7 +61,7 @@ class RequestService {
 
   Stream<DocumentSnapshot<LocationLatLng>> getDriverLiveStream(
       String requestId) {
-    return _firestoreService
+    return _serverEventService
         .getRequestLocationReference(requestId)
         .doc("driver")
         .snapshots();
